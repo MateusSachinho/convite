@@ -1,0 +1,380 @@
+#body-index {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 8px;
+}
+
+@font-face {
+    font-family: "gato";
+    src: url(fontes/Galaxy_dingbats-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "normal";
+    src: url(fontes/BebasNeue-Regular.otf) format("opentype"), 
+         url(fontes/BebasNeue-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "assinatura";
+    src: url(fontes/RenathaSignature.otf) format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "fight";
+    src: url(fontes/FIGHTBACK.otf) format("opentype"), 
+         url(fontes/FIGHTBACK.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+#div-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    width: 70vw;
+    min-width: 800px;
+}
+
+#div-titulo {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#h1-titulo {
+    font-size: 4em;
+    font-family: "fight";
+    color: white;
+    margin: 0px;
+    text-align: center;
+}
+
+#p-titulo {
+    font-size: 3em;
+    font-family: "assinatura";
+    color: white;
+    margin: 0px auto;
+    max-width: 20em;
+    text-align: center;
+}
+
+#div-senha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#Senha {
+    padding: 0.5em;
+    width: 250px;
+}
+
+.input {
+    border: 4px none white;
+    color: white;
+    background-color: black;
+}
+
+.botao-senha {
+    font-size: 12.5px;
+    font-family: "normal";
+    background-color: black;
+    color: brown;
+    text-align: center;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border: 4px none white;
+    position: relative;
+    left: 57rem;
+    top: -29rem;
+}
+
+.botao-senha:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+}
+
+#p-senha {
+    font-family: "normal";
+    font-size: larger;
+    margin: 0px auto;
+    color: white;
+}
+
+#gatos-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.gato {
+    background-color: white;
+    font-family: "gato";
+    font-size: 5em;
+    width: 1em;
+    height: 1em;
+    margin: 0px;
+}
+
+#gato1 {
+    position: relative;
+    bottom: 3em;
+    right: 2em;
+    z-index: -1;
+}
+
+#gato2 {
+    position: relative;
+    top: 3em;
+    left: 3em;
+    z-index: -1;
+}
+
+#gato3 {
+    position: relative;
+    bottom: 2.217em;
+    left: 3em;
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+    #div-principal {
+        flex-direction: column;
+        width: 90vw;
+        min-width: auto;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    #gatos-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    #gato1 {
+        position: relative;
+        bottom: 0em;
+        right: 0em;
+    }
+    
+    #gato2 {
+        position: relative;
+        top: 0em;
+        left: 0em;
+    }
+    
+    #gato3 {
+        position: relative;
+        bottom: 0em;
+        left: 0em;
+    }
+
+    .gato {
+        background-color: white;
+        font-family: "gato";
+        font-size: 3em;
+        width: 1em;
+        height: 1em;
+        margin: 0;
+    }
+
+    #h1-titulo {
+        font-size: 2.5em;
+    }
+
+    #p-titulo {
+        font-size: 2em;
+    }
+}
+
+.chave {
+    color: black;
+    position: relative;
+    top: 20rem;
+    right: 30rem;
+
+}
+
+
+.cripto {
+    position: relative;
+    bottom: 15rem;
+    right: 20rem;
+}
+
+#site {
+    color: #0f0f0f;
+    text-decoration: none;
+}
+
+.naoSelecionavel {
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;            /* Possível implementação no futuro */
+    /* cursor: default; */
+}
+
+/* 
+
+pagina principal
+
+*/
+
+#body-principal {
+    background-color: black;
+}
+
+
+.botao-sair, .botao-elencos {
+    font-size: 1rem;
+    font-family: "normal";
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 0.75em 1.5em;
+    cursor: pointer;
+    border: 4px double white;
+    transition: all 0.3s ease;
+}
+
+.botao-sair:hover, .botao-elencos:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+}
+
+.header {
+    background-color: black;
+    padding: 0.5em 1em;
+    width: 95%; 
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    border: 4px double white;
+    z-index: 1000;
+}
+
+#h1-titulo-principal {
+    font-size: 2em;
+    font-family: "fight";
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+.container-elencos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 50px; 
+}
+
+
+.botoes-elencos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.select-elencos {
+    display: none;
+}
+
+#pesquisa {
+    font-size: 2rem;
+    margin-top: 1rem;
+    font-family: "normal";
+}
+
+@media (max-width: 768px) {
+    .botoes-elencos {
+        display: none;
+    }
+
+    .select-elencos {
+        margin-top: 16px;
+        display: block;
+        width: 80%;
+        max-width: 300px;
+        padding: 0.75em 1.5em;
+        font-size: 1rem;
+        font-family: "normal";
+        background-color: black;
+        color: white;
+        border: 4px double white;
+        appearance: none;
+        background-image: url('data:image/svg+xml;utf8,<svg fill="%23ffffff" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+    }
+}
+
+/* 
+    ATLETA NÃO ENCONTRADO
+*/
+
+#body-nao-encontrado {
+    background-color: black;
+    color: white;
+}
+
+#não-encontrado {
+    font-family: "fight";
+    font-size: 7rem;
+    text-align: center;
+    margin: 0;
+    margin-top: 5rem;
+    color: white;
+}
+
+#voltar {
+    font-family: "normal";
+    color: white;
+    font-size: 3rem;
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* 
+    fotos
+*/
+
+.fotos {
+    display: flex;
+    justify-content: center;
+    padding: 15rem;
+}
