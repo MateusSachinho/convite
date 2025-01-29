@@ -1,0 +1,153 @@
+#body-detalhe {
+    background-color: black;
+}
+
+#atleta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    padding: 20px;
+}
+
+#atleta h1 {
+    font-family: "fight";
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+
+.pagina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.foto {
+    max-width: 300px;
+}
+
+.foto img {
+    width: 17rem;
+    height: auto;
+    object-fit: cover;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3 {
+    margin: 10px 0;
+    font-family: "normal";
+}
+
+.info p {
+    margin-top: 20px;
+    font-family: "normal";
+    line-height: 1.6;
+}
+
+.botao-voltar {
+    display: block;
+    width: 200px;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    font-family: "normal";
+    transition: all 0.3s ease;
+}
+
+.botao-voltar:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+    .pagina {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .foto {
+        flex: 1;
+    }
+
+    .info {
+        flex: 2;
+        text-align: left;
+    }
+}
+
+.div-atletas {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.cartao {
+    width: 100%;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.cartao:hover {
+    transform: scale(1.05);
+}
+
+.cartao img {
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.cartao a {
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    border: 2px solid white;
+    padding: 5px 10px;
+}
+
+
+@media (max-width: 768px) {
+    .div-atletas {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .div-atletas {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1300px) {
+    .div-atletas {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 1300px) {
+    .div-atletas {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
