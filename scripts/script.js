@@ -6,7 +6,7 @@ const verificaSenha = () => {
     
     // Mapeamento de senhas criptografadas para URLs
     const senhasMap = {
-        "48569c03100bdfd68c29f10876cd716c5c6a76d0792387c1e73df39029842fd3": "principal.html",
+        "48569c03100bdfd68c29f10876cd716c5c6a76d0792387c1e73df39029842fd3": "ezequiel.html",
         "3a65134d21a70a565a632ee246feb59364381748905c8b45bdb2937aeca69cb3": "luka.html",
         "7adf061e1dc3272107f8846b6f918b7e3acde9d2082dc2b556a11319b5a3076a": "alexei.html"
     };
